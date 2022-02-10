@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Dancing+Script:wght@400;500;600;700&family=Fredericka+the+Great&family=Homemade+Apple&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playball&family=Qwitcher+Grypen:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&family=Spartan:wght@500;600;700&family=The+Nautigal:wght@400;700&family=Waterfall&display=swap');
+
+
+:root{
+    --heading-color:hsl(210, 10%, 33%);
+    --text-color:hsl(201, 11%, 66%);
+}
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+   font-family: 'Bai Jamjuree', sans-serif;
+}
+main{
+    overflow:hidden;
+    width:100%;
+    Font-size: 18px;
+}
+/* Start Of Header Section: Background + Logo */
+header{
+    width:100%;
+    min-height:300px;
+    background: url(../images/bg-header-desktop.png) no-repeat;
+}
+header>img{
+    display: block;
+    margin: auto;
+    padding-top: 10%;
+    padding-left: 3%;
+}
+/*End Of Header */
+
+ h1,h2,h3,h4{
+    color:var(--heading-color);
+    font-weight: 600;             /* Font Color Of Headings and Weight*/
+ }
+
+/* Start Of the Section Below the Head With its 2 Buttons  */
+header+section{
+    width:60%;
+    min-height:280px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+   font-size: 39px;
+   font-weight:600;
+   padding:10px;
+}
+p{
+    color:var(--text-color);    /* Font Color Of All Paragraphs*/
+}
+h1+p{
+    padding-bottom: 40px;
+}
+button{
+    padding:12px;
+    display: inline-block;
+    width:23%;
+    color:white;
+    margin-right: 8px;
+    font-weight: 600;
+}
+button:first-of-type{
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 25px;
+    border: transparent;
+}
+button:last-of-type{
+    background-color:hsl(233, 100%, 69%);
+    border-radius: 25px;
+    border: transparent;
+}
+button:first-of-type:hover{
+    box-shadow:0px 7px 12px hsla(171, 66%, 44%, 0.363)  ;
+    border-bottom: 3px solid hsla(170, 59%, 35%, 0.822);
+    cursor:url(../images/hand_pointer_icon.png),pointer;        
+}
+button:last-of-type:hover{
+    box-shadow:0px 7px 12px hsla(233, 90%, 65%, 0.527)  ;
+    border-bottom: 3px solid hsl(233, 83%, 61%);
+    cursor:url(../images/hand_pointer_icon.png),pointer;
+}
+/* End Of Section Below The Head With Two Buttons */
+ 
+/* Start Of Div Below The Section With 2 buttons. */
+section+div{
+    width:60%;
+    min-height: 200px;
+    margin: auto;
+    text-align: center;
+}
+h2{
+   margin-top: 20px;
+   padding-bottom: 20px;
+   font-size: 34px;
+}
+h2+p{
+    line-height: 28px;
+}
+/* End Of Div Below The Section With 2 buttons. */
+
+/* Start Of Section with computer image and 3 paragraphs behind it */
+div+section:not(.connect-sec ,.icons-sec){
+    width:100%;
+    min-height:570px;
+    position: relative;
+}
+figure{
+    width:53%;
+    min-height:98%;
+    background: url(../images/image-computer.png)no-repeat top 0px left -50px/cover;
+    margin-left: 2%;
+    position: absolute;
+    left: 0;
+}
+figure+div{
+    width:40%;
+    height:100%;
+    position: absolute;      /* Div Containing 3 paragraphs behind the image*/
+    right: 0;
+    padding-top: 7%;
+    line-height: 38px;
+}
+h3{
+    font-size: 25px;
+}
+h3+p{
+    padding-bottom: 20px;
+}
+/* End Of Section with computer image and 3 paragraphs behind it */
+
+article{
+    width:80%;
+    min-height:250px;
+    margin: auto;
+    margin-top: 8%;
+    text-align: center;
+}
+
+.image{
+    width: 80%;
+    /* height: 550px; */
+    margin: auto;
+    text-align: center;
+}
+
+.image+div{
+    width:80%;
+    min-height: 210px;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.icons-sec{
+    width:98%;
+    min-height:270px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.icon1,.icon2,.icon3{
+    text-align: center;
+}
+h4{
+    font-size: 24px;
+    padding:25px 0px;
+}
+
+#logo-sec{
+    width:90%;
+    min-height:230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prelast-sec{
+    width:65%;
+    min-height:330px;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+}
+.prelast-sec p{
+    padding-bottom:5%;
+}
+
+.connect-sec{
+    width:100%;
+    min-height:150px;
+    background-color: hsl(0, 0%, 95%);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 40px;
+    color: var(--heading-color);
+}
+.logo-img{
+ width: 0.1%;
+}
+.connect-info{
+    width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+span:hover{
+    color: hsl(171, 67%, 44%);
+    cursor:url(../images/hand_pointer_icon.png),pointer;
+}
+.twitter-icon:hover{
+  filter: brightness(100%) sepia(1) hue-rotate(130deg) saturate(5);
+  cursor:url(../images/hand_pointer_icon.png),pointer;
+}
+
+footer{
+    width: 100%;
+    min-height:50px;
+    text-align: center;
+    background-color: rgb(109, 109, 109);
+    line-height: 50px;
+}
+
+
+@media screen and (max-width:375px){
+    header{
+        background: url(../images/bg-header-mobile.png) no-repeat;
+    }
+    header>img{
+        padding-top: 30%;
+        padding-left: 7%;
+    }
+    header+section{
+        width:97%;
+        height: 380px;
+    }
+    h1{
+        font-size: 35px;
+        padding:0px 0px 10px;
+    }
+    h1+p{
+      font-size: 16px;
+      width: 85%;
+      margin: auto;
+    }
+    button{
+        padding:12px;
+        display: inline-block;
+        width:70%;
+        margin-bottom: 4%;
+    }
+    section+div{
+        width:80%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+    }
+    h2{
+       font-size: 30px;
+    }
+    h2+p{
+        line-height: 28px;
+        font-size: 16px;
+    }
+     br{
+        display: none;
+    }
+    div+section:not(.connect-sec){
+        width:100%;
+        min-height:570px;
+        position:static;
+    }
+    figure{
+        width:97%;
+        height:275px;
+        background: url(../images/image-computer.png)no-repeat 0% 0%/cover;
+        position:static;
+    }
+    figure+div{
+        width:90%;
+        min-height:100%;
+        position:static;
+        margin-left:5%;
+        text-align: center;
+        line-height: 32px;
+        margin-bottom: 35%;
+    }
+    h3{
+      font-size: 22px;
+    }
+    h3+p{
+        padding-bottom: 30px;
+    }
+    article{
+        height:230px;
+    }
+    .image{
+        width: 90%;
+        /* min-height: 200px; */
+    }
+    .image>img{
+        width:100%;
+        display:inline-block;
+        margin: auto;
+    }
+    .image+div{
+       min-height: 200px;
+       
+    }
+    .icons-sec{
+        min-height:550px;
+        margin-bottom: 15%;
+    }
+    .icon1,.icon2,.icon3{
+       margin-bottom: 12%;
+       width: 92%;
+    }
+    #logo-sec{
+        width:50%;
+        min-height: 550px;
+        display:block;
+        line-height: 100px;
+    }
+    .prelast-sec{
+        width:82%;
+        height:450px;
+    }
+    .prelast-sec p{
+        padding-bottom:8%;
+    }
+    .connect-sec{
+        width:100%;
+        min-height:350px;
+        display:block;
+        text-align: center;
+        margin: auto;
+        line-height: 50px;
+    }
+    .logo-img{
+        display: block;
+        margin: auto;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    .connect-info{
+        width:40%;
+        display:block;
+        margin: auto;
+    }
+    span{
+        display: block;
+        margin: auto;
+    }
+}
